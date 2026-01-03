@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Registration Form</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial;
+        }
+
+        form {
+            width: 300px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            border: 2px gray solid;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>User Registration Form</h2>
+    <form>
+        <label>Full Name:</label>
+        <input type="text" name="name"><br>
+
+        <label>Email:</label>
+        <input type="email" name="email"><br>
+
+        <label>Password:</label>
+        <input type="password" name="password"><br>
+
+        <label>Gender:</label>
+        <div>
+            <input type="radio" name="gender" id="maleRadio">
+            <label for="maleRadio">Male</label>
+            <input type="radio" name="gender" id="femaleRadio">
+            <label for="femaleRadio">Female</label>
+        </div><br>
+
+        <!-- Inline CSS -->
+        <button
+            style="background-color: rgb(6, 157, 6); color: white; padding: 8px; font-size: 18px; border-radius: 8px; border: none;">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>
